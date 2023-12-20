@@ -1,8 +1,8 @@
 # Integer-Stack
 In this assignment you are required to implement a stack where integer data can be pushed and popped. You should define (typedef) an appropriate type called stack such that multiple variables of type stack can be defined.
 
-Your implementation should support the following functions (interface) for the stack.\
-1. **stack createIntegerStack(int stackSize)** - This allocates space for the stack to hold maximum "stackSize" number of integers and initializes that space. Its return type is **"stack"**. The function returns NULL if creation of the stack fails.\
+Your implementation should support the following functions (interface) for the stack.
+1. **stack createIntegerStack(int stackSize)** - This allocates space for the stack to hold maximum "stackSize" number of integers and initializes that space. Its return type is **"stack"**. The function returns NULL if creation of the stack fails.
 2. **int pushIntegerStack(stack s, int d)** - It pushes the data d in the stack s. It returns 1 if the operation is successful. If the operation fails (say, when stack s is full and d cannot be pushed), the function returns 0.
 3. int popIntegerStack(stack s, int *dp) - It pops from the stack s and stores the popped element at address dp. It returns 1 if the operation is successful. If the operation fails (say, when stack s is empty and popIntegerStack() is attempted), the function returns 0.
 4. **int freeIntegerStack(stack s)** - It frees the space allocated for stack s. It returns 1 if the operation is successful. If the operation fails (say, s does not refer to a valid stack), the function returns 0.
